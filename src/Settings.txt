@@ -1,0 +1,2 @@
+bw=20, delay='10ms', loss=5, max_queue_size=100, use_htb=True
+bw=20, delay='10ms', loss=10, max_queue_size=2000, use_htb=False

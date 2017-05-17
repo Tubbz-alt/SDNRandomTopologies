@@ -1,0 +1,2 @@
+bw=56, delay='88ms', loss=77, max_queue_size=99, use_htb=True
+bw=6, delay='4ms', loss=54, max_queue_size=4, use_htb=True

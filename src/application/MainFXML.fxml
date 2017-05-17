@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.test">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="486.0" prefWidth="720.0">
+         <children>
+            <Label layoutX="196.0" layoutY="313.0" text="Number of Hosts" textFill="#074565">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="244.0" text="Number of Switches" textFill="#074565">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <TextField id="mainInputs" fx:id="NoSwitches" layoutX="395.0" layoutY="243.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField id="NoHosts" fx:id="NoHosts" layoutX="395.0" layoutY="312.0" prefHeight="25.0" prefWidth="81.0" />
+            <MenuBar id="menuBar" layoutX="1.0" prefHeight="29.0" prefWidth="717.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Settings">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Setting" text="Add Links Properties" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Button id="nextBtn" fx:id="nextBtn" layoutX="346.0" layoutY="392.0" mnemonicParsing="false" onAction="#Next" prefHeight="44.0" prefWidth="179.0" text="Next" />
+            <ImageView fitHeight="157.0" fitWidth="241.0" layoutX="240.0" layoutY="53.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@welcome.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
